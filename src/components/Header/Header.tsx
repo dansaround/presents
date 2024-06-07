@@ -9,9 +9,9 @@ import {
   Wrapper,
 } from "./Header.styles";
 import ProfilePic from "../../assets/profile_pic.png";
-import Socials from "../Socials/Socials";
+import { Socials } from "../Socials";
 
-export const Header = () => {
+export function Header() {
   const backImgUrl =
     "https://www.befunky.com/images/wp/wp-2022-09-Color-Palette-Featured.png?auto=avif,webp&format=jpg&width=1150&crop=16:9";
 
@@ -31,4 +31,4 @@ export const Header = () => {
       <Socials />
     </Wrapper>
   );
-};
+}

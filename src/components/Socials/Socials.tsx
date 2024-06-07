@@ -1,7 +1,7 @@
 import { SocialIcon } from "react-social-icons";
 import { Wrapper } from "./Socials.styles";
 
-export default function Socials() {
+export function Socials() {
   const urlWhatsapp = "https://wa.me/message/63G3GQCG742WM1";
 
   const urlTikTok = "https://www.tiktok.com/@rosamariaalvarezsalas";

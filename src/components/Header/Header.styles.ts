@@ -36,13 +36,14 @@ export const CoverImage = styled.img`
 export const Title = styled.h1`
   font-size: 26px;
   color: #fff;
+  margin: 20px 0 0 0;
 `;
 
 export const Subtitle = styled.h2`
   font-size: 16px;
   font-weight: 500;
   color: #ccc;
-  margin-bottom: 0.75em;
+  text-align: center;
 `;
 
 export const Description = styled.span`

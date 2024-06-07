@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Header } from "./components/Header";
+import { CTA, Header } from "./components";
 
 const AppWrapper = styled.main`
   max-width: 420px;
@@ -12,6 +12,7 @@ function App() {
   return (
     <AppWrapper>
       <Header />
+      <CTA />
     </AppWrapper>
   );
 }
