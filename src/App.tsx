@@ -1,9 +1,18 @@
-import { useState } from "react";
+import styled from "styled-components";
+import { Header } from "./components/Header";
 
-import "./App.css";
+const AppWrapper = styled.main`
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+`;
 
 function App() {
-  return <>Home</>;
+  return (
+    <AppWrapper>
+      <Header />
+    </AppWrapper>
+  );
 }
 
 export default App;
