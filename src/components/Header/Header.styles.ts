@@ -12,7 +12,7 @@ export const Wrapper = styled.section`
 export const CoverContainer = styled.div`
   position: relative;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 20px;
 `;
 
 export const ImageOverlay = styled.div`
@@ -24,12 +24,14 @@ export const ImageOverlay = styled.div`
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
   pointer-events: none;
   transform: translateY(-7px);
+  border-radius: 20px;
 `;
 
 export const CoverImage = styled.img`
   width: 100%;
   height: 170px;
   object-fit: cover;
+  border-radius: 20px;
 `;
 
 export const Title = styled.h1`
