@@ -13,24 +13,23 @@ export const CoverContainer = styled.div`
   position: relative;
   width: 100%;
   border-radius: 15px;
-  overflow: hidden;
 `;
 
 export const ImageOverlay = styled.div`
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
-  height: 100%; /* Adjust the height as necessary */
+  height: 100%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-  pointer-events: none; /* Ensures the overlay doesn't block clicks */
+  pointer-events: none;
+  transform: translateY(-7px);
 `;
 
 export const CoverImage = styled.img`
   width: 100%;
   height: 170px;
   object-fit: cover;
-  margin-bottom: 1.2rem;
 `;
 
 export const Title = styled.h1`
@@ -57,7 +56,7 @@ export const Description = styled.span`
 
 export const ProfileImage = styled.img`
   position: absolute;
-  top: 5em;
+  top: 4em;
   left: 50;
   /* transform: translateY(80px); */
   max-width: 130px;

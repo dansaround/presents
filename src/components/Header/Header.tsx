@@ -11,14 +11,13 @@ import {
 import ProfilePic from "../../assets/profile_pic.png";
 import { Socials } from "../Socials";
 
-export function Header() {
-  const backImgUrl =
-    "https://www.befunky.com/images/wp/wp-2022-09-Color-Palette-Featured.png?auto=avif,webp&format=jpg&width=1150&crop=16:9";
+import COVER from "../../assets/Cover.png";
 
+export function Header() {
   return (
     <Wrapper>
       <CoverContainer>
-        <CoverImage src={backImgUrl} />
+        <CoverImage src={COVER} />
         <ImageOverlay />
       </CoverContainer>
       <ProfileImage src={ProfilePic} />
