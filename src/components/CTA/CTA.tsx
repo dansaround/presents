@@ -1,8 +1,14 @@
 import { Button, Wrapper } from "./CTA.styles";
 
-export function CTA() {
+type CTAProps = {
+  filePath: string;
+  redirectTo: string;
+  ctaText: string;
+};
+
+export function CTA({ filePath, redirectTo, ctaText }: CTAProps) {
   const handleDownload = () => {
-    const fileURL = `src/assets/rosamaria.vcf`;
+    const fileURL = filePath;
     const link = document.createElement("a");
     link.href = fileURL;
     link.download = "rosamaria.vcf";
@@ -10,7 +16,7 @@ export function CTA() {
   };
 
   const redirectWhatsapp = () => {
-    const newURL = "https://wa.link/2q2tzs";
+    const newURL = redirectTo;
     const link = document.createElement("a");
     link.href = newURL;
     link.target = "_blank";
@@ -21,7 +27,7 @@ export function CTA() {
     <Wrapper>
       <Button onClick={handleDownload}>Añadir Contacto</Button>
       <Button onClick={redirectWhatsapp} $primary>
-        Escríbeme
+        {ctaText}
       </Button>
     </Wrapper>
   );

@@ -20,6 +20,11 @@ export const people = [
         profile: rosaProfilePic,
         cover: rosaCover,
       },
+      cta: {
+        vcf: "src/assets/rosamaria.vcf",
+        linkTo: "https://wa.link/2q2tzs",
+        textCTA: "Escríbeme",
+      },
     },
   },
 ];

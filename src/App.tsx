@@ -28,7 +28,11 @@ function App() {
         urlLinkedIn={rosaMaria.links.linkedin}
         urlYoutube={rosaMaria.links.youtube}
       />
-      <CTA />
+      <CTA
+        filePath={rosaMaria.cta.vcf}
+        redirectTo={rosaMaria.cta.linkTo}
+        ctaText={rosaMaria.cta.textCTA}
+      />
     </AppWrapper>
   );
 }
