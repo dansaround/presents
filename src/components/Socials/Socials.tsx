@@ -1,23 +1,43 @@
 import { SocialIcon } from "react-social-icons";
 import { Wrapper } from "./Socials.styles";
 
-export function Socials() {
-  const urlWhatsapp = "https://wa.me/message/63G3GQCG742WM1";
+type SocialsProps = {
+  urlWhatsapp?: string;
+  urlTikTok?: string;
+  urlInstagram?: string;
+  urlFacebook?: string;
+  urlLinkedIn?: string;
+  urlYoutube?: string;
+};
 
-  const urlTikTok = "https://www.tiktok.com/@rosamariaalvarezsalas";
-  const urlInstagram = "https://www.instagram.com/rosa_alvarezs";
-  const urlFacebook = "https://www.facebook.com/rosamariarealtor";
-  const urlLinkedIn = "https://www.linkedin.com/in/rosa-maria-alvarez-salas-/";
-  const urlYoutube = "https://www.youtube.com/@rosamariaalvarezsalas";
-
+export function Socials({
+  urlWhatsapp,
+  urlTikTok,
+  urlInstagram,
+  urlFacebook,
+  urlLinkedIn,
+  urlYoutube,
+}: SocialsProps) {
   return (
     <Wrapper>
-      <SocialIcon href={urlWhatsapp} target="_blank" network="whatsapp" />
-      <SocialIcon href={urlInstagram} target="_blank" network="instagram" />
-      <SocialIcon href={urlTikTok} target="_blank" network="tiktok" />
-      <SocialIcon href={urlFacebook} target="_blank" network="facebook" />
-      <SocialIcon href={urlLinkedIn} target="_blank" network="linkedin" />
-      <SocialIcon href={urlYoutube} target="_blank" network="youtube" />
+      {urlWhatsapp && (
+        <SocialIcon href={urlWhatsapp} target="_blank" network="whatsapp" />
+      )}
+      {urlInstagram && (
+        <SocialIcon href={urlInstagram} target="_blank" network="instagram" />
+      )}
+      {urlTikTok && (
+        <SocialIcon href={urlTikTok} target="_blank" network="tiktok" />
+      )}
+      {urlFacebook && (
+        <SocialIcon href={urlFacebook} target="_blank" network="facebook" />
+      )}
+      {urlLinkedIn && (
+        <SocialIcon href={urlLinkedIn} target="_blank" network="linkedin" />
+      )}
+      {urlYoutube && (
+        <SocialIcon href={urlYoutube} target="_blank" network="youtube" />
+      )}
     </Wrapper>
   );
 }

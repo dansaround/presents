@@ -8,26 +8,32 @@ import {
   Title,
   Wrapper,
 } from "./Header.styles";
-import ProfilePic from "../../assets/profile_pic.png";
-import { Socials } from "../Socials";
 
-import COVER from "../../assets/Cover.png";
+type HeaderProps = {
+  name: string;
+  role: string;
+  description?: string;
+  profilePic: string;
+  coverImg: string;
+};
 
-export function Header() {
+export function Header({
+  name = "Nombre y apellido",
+  role = "Título de Cargo",
+  description,
+  profilePic,
+  coverImg,
+}: HeaderProps) {
   return (
     <Wrapper>
       <CoverContainer>
-        <CoverImage src={COVER} />
+        <CoverImage src={coverImg} />
         <ImageOverlay />
       </CoverContainer>
-      <ProfileImage src={ProfilePic} />
-      <Title>Rosa María Álvarez</Title>
-      <Subtitle>Asesora Inmobiliaria |❤️✈️| Estudiante de coaching</Subtitle>
-      <Description>
-        Me dedico a brindar un servicio personalizado y de calidad, adaptado a
-        la necesidad de cada cliente.
-      </Description>
-      <Socials />
+      <ProfileImage src={profilePic} />
+      <Title>{name}</Title>
+      <Subtitle>{role}</Subtitle>
+      <Description>{description}</Description>
     </Wrapper>
   );
 }
