@@ -1,7 +1,7 @@
-import React from "react";
 import {
   Card,
-  ImageContainer,
+  CardTitle,
+  Image,
   Location,
   Price,
   SwiperPro,
@@ -10,8 +10,8 @@ import {
   Wrapper,
 } from "./Properties.style";
 import { Button } from "../Button";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+
+import { FreeMode, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -33,11 +33,12 @@ export function Properties({ properties }: PropertiesProps) {
     <Wrapper>
       <SwiperPro
         slidesPerView={"auto"}
+        freeMode={true}
         spaceBetween={10}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        modules={[FreeMode, Pagination]}
       >
         {properties.map((property) => {
           const handleClick = () => {
@@ -47,13 +48,11 @@ export function Properties({ properties }: PropertiesProps) {
           return (
             <SwiperSlidePro key={property.url}>
               <Card>
-                <ImageContainer>
-                  <img src={property.image} alt={`Imagen ${property.title}`} />
-                </ImageContainer>
-                <Title>{property.title}</Title>
+                <Image src={property.image} alt={`Imagen ${property.title}`} />
+                <Location>{property.location}</Location>
+                <CardTitle>{property.title}</CardTitle>
 
                 <Price>{property.priceUsd}</Price>
-                <Location>{property.location}</Location>
                 <Button onClick={handleClick}> Ver Más</Button>
               </Card>
             </SwiperSlidePro>

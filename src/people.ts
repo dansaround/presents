@@ -172,8 +172,7 @@ export const people = [
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-departamento-en-venta-santiago-de-surco-lima-lima-1065659/",
-          image:
-            "https://sfo3.digitaloceanspaces.com/media-remax-peru/media/public/photos/propertys/1065659/cover_1065659.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Expires=3600&X-Amz-Credential=PVSQWTTYSF24OLDHUMMG%2F20240611%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-SignedHeaders=host&X-Amz-Date=20240611T060509Z&X-Amz-Signature=a58a0c360f85376ddb8490caa74788a96e22e6138fc0008b023edcc6a8e0a75b",
+          image: "src/assets/rma/depa_flat_venta_surco4.jpg",
           title: "DEPARTAMENTO FLAT EN VENTA",
           priceSol: "S/. 1'166,880.00",
           priceUsd: "USD 312,000.00",
