@@ -1,4 +1,5 @@
-import { Button, Wrapper } from "./CTA.styles";
+import { Button } from "../Button";
+import { Wrapper } from "./CTA.styles";
 
 type CTAProps = {
   filePath: string;
