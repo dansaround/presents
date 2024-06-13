@@ -1,18 +1,19 @@
+import "swiper/css";
 import {
   Card,
-  CardTitle,
   Image,
-  Location,
-  SwiperPro,
-  SwiperSlidePro,
   Title,
   Wrapper,
+  Location,
+  CardTitle,
+  SwiperSlidePro,
+  Price,
+  TextContainer,
 } from "./Properties.style";
-import { Button } from "../Button";
-
-import { FreeMode, Pagination } from "swiper/modules";
-import "swiper/css";
 import "swiper/css/pagination";
+import { Button } from "../Button";
+import { FreeMode, Pagination } from "swiper/modules";
+import { Swiper } from "swiper/react";
 
 type Property = {
   url: string;
@@ -32,13 +33,13 @@ export function Properties({ properties }: PropertiesProps) {
     <Wrapper>
       <Title>Inmuebles disponibles</Title>
 
-      <SwiperPro
+      <Swiper
         slidesPerView={"auto"}
         freeMode={true}
         spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
+        // pagination={{
+        //   clickable: true,
+        // }}
         modules={[FreeMode, Pagination]}
       >
         {properties.map((property) => {
@@ -50,20 +51,26 @@ export function Properties({ properties }: PropertiesProps) {
             <SwiperSlidePro key={property.url}>
               <Card>
                 <Image src={property.image} alt={`Imagen ${property.title}`} />
-                <Location>{property.location}</Location>
-                <CardTitle>{property.title}</CardTitle>
-
-                <Button
-                  style={{ transform: "scale(0.8) translate(0px, -10px)" }}
-                  onClick={handleClick}
-                >
-                  {property.priceUsd}
-                </Button>
+                <TextContainer>
+                  <Location>{property.location}</Location>
+                  <CardTitle>{property.title}</CardTitle>
+                  <Price>{property.priceUsd}</Price>
+                  <Button
+                    style={{
+                      transform: "scale(0.8) translate(0px, -10px)",
+                      fontWeight: "800",
+                      padding: "8px 10px",
+                    }}
+                    onClick={handleClick}
+                  >
+                    VER MÁS
+                  </Button>
+                </TextContainer>
               </Card>
             </SwiperSlidePro>
           );
         })}
-      </SwiperPro>
+      </Swiper>
     </Wrapper>
   );
 }

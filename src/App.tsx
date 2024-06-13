@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { CTA, Header, Properties, Socials } from "./components";
+import { CTA, Divider, Header, Properties, Socials } from "./components";
 import { people } from "./people";
 
 const AppWrapper = styled.main`
@@ -35,7 +35,9 @@ function App() {
           redirectTo={rosaMaria.cta.linkTo}
           ctaText={rosaMaria.cta.textCTA}
         />
+        <Divider />
         <Properties properties={rmaProperties} />
+        <Divider />
       </AppWrapper>
     </>
   );

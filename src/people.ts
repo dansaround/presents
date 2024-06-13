@@ -27,7 +27,7 @@ export const people = [
       name: "Rosa María Álvarez",
       role: "Asesora Inmobiliaria |❤️✈️| Estudiante de coaching",
       description:
-        "Me dedico a brindar un servicio personalizado y de calidad, adaptado a la necesidad de cadaHeaderProps",
+        "Me dedico a brindar un servicio personalizado y de calidad, adaptado a la necesidad de cada cliente",
       links: {
         whatsapp: "https://wa.me/message/63G3GQCG742WM1",
         tiktok: "https://www.tiktok.com/@rosamariaalvarezsalas",
