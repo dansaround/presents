@@ -1,7 +1,15 @@
-import styled from "styled-components";
-import { CTA, Divider, Header, Properties, Socials } from "./components";
 import { people } from "./people";
+import styled from "styled-components";
 import { ActionCard } from "./components/";
+import FullImage from "./assets/ExampleBody.png";
+import {
+  CTA,
+  Divider,
+  Header,
+  ImageCard,
+  Properties,
+  Socials,
+} from "./components";
 
 const AppWrapper = styled.main`
   max-width: 420px;
@@ -40,6 +48,8 @@ function App() {
         <Properties properties={rmaProperties} />
         <Divider />
         <ActionCard />
+        <Divider />
+        <ImageCard src={FullImage} />
       </AppWrapper>
     </>
   );
