@@ -32,7 +32,7 @@ export const people = [
           title: "CASA URBANA EN VENTA",
           priceSol: "S/. 1'757,800.00",
           priceUsd: "USD 470,000.00",
-          location: "Lima, Lima, La Molina",
+          location: "Lima, La Molina",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-terreno-en-alquiler-chorrillos-lima-lima-1096089/",
@@ -40,7 +40,7 @@ export const people = [
           title: "TERRENO COMERCIAL EN ALQUILER",
           priceSol: "S/. 11,220.00",
           priceUsd: "USD 3,000.00",
-          location: "Lima, Lima, Chorrillos",
+          location: "Lima, Chorrillos",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-departamento-en-venta-miraflores-lima-lima-1092314/",
@@ -48,7 +48,7 @@ export const people = [
           title: "DEPARTAMENTO DUPLEX EN VENTA",
           priceSol: "S/. 935,000.00",
           priceUsd: "USD 250,000.00",
-          location: "Lima, Lima, Miraflores",
+          location: "Lima, Miraflores",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-departamento-en-alquiler-san-isidro-lima-lima-1092222/",
@@ -56,7 +56,7 @@ export const people = [
           title: "DEPARTAMENTO FLAT EN ALQUILER",
           priceSol: "S/. 4,862.00",
           priceUsd: "USD 1,300.00",
-          location: "Lima, Lima, San Isidro",
+          location: "Lima, San Isidro",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-departamento-en-venta-miraflores-lima-lima-1089713/",
@@ -64,7 +64,7 @@ export const people = [
           title: "DEPARTAMENTO FLAT EN VENTA",
           priceSol: "S/. 1'795,200.00",
           priceUsd: "USD 480,000.00",
-          location: "Lima, Lima, Miraflores",
+          location: "Lima, Miraflores",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-departamento-en-venta-surquillo-lima-lima-1084225/",
@@ -72,7 +72,7 @@ export const people = [
           title: "DEPARTAMENTO FLAT EN VENTA",
           priceSol: "S/. 299,200.00",
           priceUsd: "USD 80,000.00",
-          location: "Lima, Lima, Surquillo",
+          location: "Lima, Surquillo",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-departamento-en-alquiler-san-isidro-lima-lima-1082111/",
@@ -80,7 +80,7 @@ export const people = [
           title: "DEPARTAMENTO FLAT EN ALQUILER",
           priceSol: "S/. 4,675.00",
           priceUsd: "USD 1,250.00",
-          location: "Lima, Lima, San Isidro",
+          location: "Lima, San Isidro",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-terreno-en-alquiler-chorrillos-lima-lima-1082081/",
@@ -88,7 +88,7 @@ export const people = [
           title: "TERRENO COMERCIAL EN ALQUILER",
           priceSol: "S/. 44,880.00",
           priceUsd: "USD 12,000.00",
-          location: "Lima, Lima, Chorrillos",
+          location: "Lima, Chorrillos",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-departamento-en-venta-santiago-de-surco-lima-lima-1082047/",
@@ -96,7 +96,7 @@ export const people = [
           title: "DEPARTAMENTO FLAT EN VENTA",
           priceSol: "S/. 1'365,100.00",
           priceUsd: "USD 365,000.00",
-          location: "Lima, Lima, Santiago de Surco",
+          location: "Lima, Santiago de Surco",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-terreno-en-venta-carabayllo-lima-lima-1080254/",
@@ -104,7 +104,7 @@ export const people = [
           title: "TERRENO COMERCIAL EN VENTA",
           priceSol: "S/. 224,400.00",
           priceUsd: "USD 60,000.00",
-          location: "Lima, Lima, Carabayllo",
+          location: "Lima, Carabayllo",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-terreno-en-alquiler-chorrillos-lima-lima-1080229/",
@@ -112,7 +112,7 @@ export const people = [
           title: "TERRENO INDUSTRIAL EN ALQUILER",
           priceSol: "S/. 164,560.00",
           priceUsd: "USD 44,000.00",
-          location: "Lima, Lima, Chorrillos",
+          location: "Lima, Chorrillos",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-departamento-en-venta-santiago-de-surco-lima-lima-1079023/",
@@ -120,7 +120,7 @@ export const people = [
           title: "DEPARTAMENTO FLAT EN VENTA",
           priceSol: "S/. 243,100.00",
           priceUsd: "USD 65,000.00",
-          location: "Lima, Lima, Santiago de Surco",
+          location: "Lima, Santiago de Surco",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-departamento-en-venta-miraflores-lima-lima-1078116/",
@@ -128,7 +128,7 @@ export const people = [
           title: "DEPARTAMENTO FLAT EN VENTA",
           priceSol: "S/. 935,000.00",
           priceUsd: "USD 250,000.00",
-          location: "Lima, Lima, Miraflores",
+          location: "Lima, Miraflores",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-departamento-en-venta-lince-lima-lima-1077439/",
@@ -136,7 +136,7 @@ export const people = [
           title: "DEPARTAMENTO FLAT EN VENTA",
           priceSol: "S/. 822,800.00",
           priceUsd: "USD 220,000.00",
-          location: "Lima, Lima, Lince",
+          location: "Lima, Lince",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-departamento-en-venta-santiago-de-surco-lima-lima-1076943/",
@@ -144,7 +144,7 @@ export const people = [
           title: "DEPARTAMENTO FLAT EN VENTA",
           priceSol: "S/. 411,400.00",
           priceUsd: "USD 110,000.00",
-          location: "Lima, Lima, Santiago de Surco",
+          location: "Lima, Santiago de Surco",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-terreno-en-venta-aguas-verdes-zarumilla-tumbes-1076042/",
@@ -160,7 +160,7 @@ export const people = [
           title: "CASA URBANA EN VENTA",
           priceSol: "S/. 1'492,260.00",
           priceUsd: "USD 399,000.00",
-          location: "Lima, Lima, Santiago de Surco",
+          location: "Lima, Santiago de Surco",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-terreno-en-venta-santa-rosa-lima-lima-1069454/",
@@ -168,7 +168,7 @@ export const people = [
           title: "TERRENO COMERCIAL EN VENTA",
           priceSol: "S/. 306,680.00",
           priceUsd: "USD 82,000.00",
-          location: "Lima, Lima, Santa Rosa",
+          location: "Lima, Santa Rosa",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-departamento-en-venta-santiago-de-surco-lima-lima-1065659/",
@@ -177,7 +177,7 @@ export const people = [
           title: "DEPARTAMENTO FLAT EN VENTA",
           priceSol: "S/. 1'166,880.00",
           priceUsd: "USD 312,000.00",
-          location: "Lima, Lima, Santiago de Surco",
+          location: "Lima, Santiago de Surco",
         },
         {
           url: "https://www.remax.pe/web/search/property/propiedad-departamento-en-venta-miraflores-lima-lima-1056803/",
@@ -185,7 +185,7 @@ export const people = [
           title: "DEPARTAMENTO FLAT EN VENTA",
           priceSol: "S/. 4'114,000.00",
           priceUsd: "USD 1'100,000.00",
-          location: "Lima, Lima, Miraflores",
+          location: "Lima, Miraflores",
         },
       ],
     },

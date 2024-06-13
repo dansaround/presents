@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Card,
+  ImageContainer,
   Location,
   Price,
   SwiperPro,
@@ -32,7 +33,7 @@ export function Properties({ properties }: PropertiesProps) {
     <Wrapper>
       <SwiperPro
         slidesPerView={"auto"}
-        spaceBetween={1}
+        spaceBetween={10}
         pagination={{
           clickable: true,
         }}
@@ -46,10 +47,12 @@ export function Properties({ properties }: PropertiesProps) {
           return (
             <SwiperSlidePro key={property.url}>
               <Card>
-                {/* <img src={property.image} alt={`Imagen ${property.title}`} /> */}
+                <ImageContainer>
+                  <img src={property.image} alt={`Imagen ${property.title}`} />
+                </ImageContainer>
                 <Title>{property.title}</Title>
 
-                <Price>Price Usd: {property.priceUsd}</Price>
+                <Price>{property.priceUsd}</Price>
                 <Location>{property.location}</Location>
                 <Button onClick={handleClick}> Ver Más</Button>
               </Card>

@@ -19,19 +19,20 @@ export const SwiperPro = styled(Swiper)`
 export const SwiperSlidePro = styled(SwiperSlide)`
   text-align: center;
   font-size: 18px;
-
+  width: auto;
   /* Center slide text vertically */
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  height: 500px;
+  padding-bottom: 100px; //TODO
 `;
 
 export const Card = styled.div`
   flex: 0 0 auto;
   flex-direction: column;
-  width: 200px;
+  width: 250px;
+  height: 400px;
   border: 1px solid #ccc;
   border-radius: 15px;
   padding: 10px;
@@ -40,22 +41,30 @@ export const Card = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 1em;
-  margin: 10px 0;
+  font-size: 0.9em;
+`;
+export const ImageContainer = styled.div`
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
 `;
 
 export const Image = styled.img`
-  width: 100px;
-  height: 200px;
-  object-fit: scale-down;
+  width: 100%;
+  max-height: auto;
+  object-fit: cover;
 `;
 
 export const Price = styled.p`
+  margin: 0;
   font-size: 1em;
   color: #888;
 `;
 
 export const Location = styled.h4`
-  font-size: 0%.8;
+  font-size: 0.6;
+  font-weight: 500;
+  margin: 0;
   color: #fff;
 `;
