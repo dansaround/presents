@@ -6,7 +6,6 @@ import {
   Price,
   SwiperPro,
   SwiperSlidePro,
-  Title,
   Wrapper,
 } from "./Properties.style";
 import { Button } from "../Button";
