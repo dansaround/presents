@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { CTA, Divider, Header, Properties, Socials } from "./components";
 import { people } from "./people";
+import { ActionCard } from "./components/";
 
 const AppWrapper = styled.main`
   max-width: 420px;
@@ -38,6 +39,7 @@ function App() {
         <Divider />
         <Properties properties={rmaProperties} />
         <Divider />
+        <ActionCard />
       </AppWrapper>
     </>
   );
