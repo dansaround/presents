@@ -21,8 +21,8 @@ export const SwiperSlidePro = styled(SwiperSlide)`
 export const Card = styled.div`
   flex: 0 0 auto;
   flex-direction: column;
-  width: 300px;
-  height: 360px;
+  width: 180px;
+  height: 340px;
   border: 1px solid #ccc;
   border-radius: 15px;
   padding: 10px 10px;
@@ -34,7 +34,7 @@ export const ImageContainer = styled.div``;
 
 export const Image = styled.img`
   width: 100%;
-  height: 18vh;
+  height: 200px;
   border-radius: 10px;
   overflow: hidden;
 
@@ -42,23 +42,20 @@ export const Image = styled.img`
 `;
 
 export const Title = styled.h2`
-  font-size: 1em;
-  margin: 0;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 10px 0px;
 `;
 
 export const CardTitle = styled.h2`
-  font-size: 1em;
+  font-size: 0.8em;
+  font-weight: 700;
+  margin: 5px, 0px;
   margin: 0;
-`;
-
-export const Price = styled.p`
-  margin: 0;
-  font-size: 1em;
-  color: #888;
 `;
 
 export const Location = styled.h4`
-  font-size: 0.8em;
+  font-size: 0.6em;
   font-weight: 500;
   margin: 5px 0;
   color: #fff;

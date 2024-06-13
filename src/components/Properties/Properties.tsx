@@ -3,7 +3,6 @@ import {
   CardTitle,
   Image,
   Location,
-  Price,
   SwiperPro,
   SwiperSlidePro,
   Title,
@@ -54,8 +53,12 @@ export function Properties({ properties }: PropertiesProps) {
                 <Location>{property.location}</Location>
                 <CardTitle>{property.title}</CardTitle>
 
-                <Price>{property.priceUsd}</Price>
-                <Button onClick={handleClick}> Ver Más</Button>
+                <Button
+                  style={{ transform: "scale(0.8) translate(0px, -10px)" }}
+                  onClick={handleClick}
+                >
+                  {property.priceUsd}
+                </Button>
               </Card>
             </SwiperSlidePro>
           );
