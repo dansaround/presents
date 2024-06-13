@@ -6,6 +6,7 @@ import {
   Price,
   SwiperPro,
   SwiperSlidePro,
+  Title,
   Wrapper,
 } from "./Properties.style";
 import { Button } from "../Button";
@@ -30,6 +31,8 @@ type PropertiesProps = {
 export function Properties({ properties }: PropertiesProps) {
   return (
     <Wrapper>
+      <Title>Inmuebles disponibles</Title>
+
       <SwiperPro
         slidesPerView={"auto"}
         freeMode={true}
