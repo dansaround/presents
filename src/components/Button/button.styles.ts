@@ -1,11 +1,16 @@
 import styled from "styled-components";
 
-export const Button = styled.button<{ $primary?: boolean }>`
-  background: ${(props) => (props.$primary ? "#E94F37" : "#3F88C5")};
+export const Button = styled.button<{
+  $primary?: boolean;
+  $weight?: number;
+  $color?: string;
+}>`
+  background: ${(props) =>
+    props.$primary ? "#FF0000" : props.$color || "blue"};
   color: ${(props) => (props.$primary ? "white" : "white")};
   width: 100%;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: ${(props) => props.$weight || 800};
   margin: 15px 0.2em;
   padding: 0.8em 5px;
   border-radius: 8px;

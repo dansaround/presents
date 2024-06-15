@@ -26,7 +26,9 @@ export function CTA({ filePath, redirectTo, ctaText }: CTAProps) {
 
   return (
     <Wrapper>
-      <Button onClick={handleDownload}>Añadir Contacto</Button>
+      <Button onClick={handleDownload} $color="">
+        Añadir Contacto
+      </Button>
       <Button onClick={redirectWhatsapp} $primary>
         {ctaText}
       </Button>
