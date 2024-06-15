@@ -20,7 +20,7 @@ export const Button = styled.button<{
 
   &:hover {
     background: ${(props) => (props.$primary ? "white" : "#3F88C5")};
-    color: ${(props) => (props.$primary ? "#E94F37" : "white")};
+    color: ${(props) => (props.$primary ? "#6B70FF" : "white")};
   }
 
   &:active {

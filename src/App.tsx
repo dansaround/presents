@@ -18,6 +18,10 @@ const AppWrapper = styled.main`
   overflow: hidden;
 `;
 
+const handleRedirect = (url: string) => {
+  window.open(url, "_blank");
+};
+
 function App() {
   const { rosaMaria } = people[0];
   const { properties: rmaProperties } = rosaMaria;
@@ -49,7 +53,12 @@ function App() {
         <Divider />
         <ActionCard />
         <Divider />
-        <ImageCard src={FullImage} />
+        <ImageCard
+          src={FullImage}
+          onClick={() => {
+            handleRedirect("https://www.instagram.com/rosa_alvarezs/");
+          }}
+        />
       </AppWrapper>
     </>
   );

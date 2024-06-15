@@ -4,14 +4,18 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 130px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 300ms;
   border-radius: 15px;
   margin-bottom: 10px;
   background-color: #363636;
-  /* border: 1px solid #ccc; */
+  grid-template-columns: 1fr 2fr;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  overflow: hidden;
+
+  &:hover {
+    background-color: #535353;
+  }
 `;
 
 export const Image = styled.img`

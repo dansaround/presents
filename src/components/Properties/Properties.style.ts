@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { SwiperSlide } from "swiper/react";
+import { Button } from "../Button";
 
 export const Wrapper = styled.section`
   width: 100%;
@@ -16,11 +17,13 @@ export const SwiperSlidePro = styled(SwiperSlide)`
   width: auto;
 `;
 export const Card = styled.div`
+  position: relative;
   width: 180px;
   height: 340px;
   flex: 0 0 auto;
   border-radius: 15px;
   margin-bottom: 10px;
+  overflow: hidden;
   flex-direction: column;
   background-color: #363636;
   /* border: 1px solid #ccc; */
@@ -47,7 +50,7 @@ export const Location = styled.h4`
 `;
 
 export const CardTitle = styled.h3`
-  font-size: 0.7em;
+  font-size: 0.9em;
   font-weight: 700;
   margin: 0;
 `;
@@ -56,4 +59,26 @@ export const Price = styled.p`
   font-size: 0.7em;
   color: #585858;
   margin: 5px 0px;
+`;
+
+export const Tag = styled.div<{ $isForSale: boolean }>`
+  width: 100%;
+  height: 20px;
+  display: flex;
+  font-weight: 600;
+  position: absolute;
+  padding: 3px 0px;
+  align-items: center;
+  justify-content: center;
+  background-color: ${(props) => (props.$isForSale ? "red" : "blue")};
+`;
+
+export const MoreButton = styled(Button)<{
+  $primary?: boolean;
+  $weight?: number;
+  $color?: string;
+}>`
+  bottom: 0;
+  left: 0;
+  position: absolute;
 `;

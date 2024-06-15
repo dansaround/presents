@@ -9,9 +9,10 @@ import {
   SwiperSlidePro,
   Price,
   TextContainer,
+  Tag,
+  MoreButton,
 } from "./Properties.style";
 import "swiper/css/pagination";
-import { Button } from "../Button";
 import { FreeMode, Pagination } from "swiper/modules";
 import { Swiper } from "swiper/react";
 
@@ -22,6 +23,7 @@ type Property = {
   priceSol: string;
   priceUsd: string;
   location: string;
+  type: string;
 };
 
 type PropertiesProps = {
@@ -37,9 +39,6 @@ export function Properties({ properties }: PropertiesProps) {
         slidesPerView={"auto"}
         freeMode={true}
         spaceBetween={10}
-        // pagination={{
-        //   clickable: true,
-        // }}
         modules={[FreeMode, Pagination]}
       >
         {properties.map((property) => {
@@ -50,21 +49,23 @@ export function Properties({ properties }: PropertiesProps) {
           return (
             <SwiperSlidePro key={property.url}>
               <Card>
+                <Tag $isForSale={property.type === "Venta" ? true : false}>
+                  {property.type === "Venta" ? "VENTA" : "ALQUILER"}
+                </Tag>
                 <Image src={property.image} alt={`Imagen ${property.title}`} />
                 <TextContainer>
                   <Location>{property.location}</Location>
                   <CardTitle>{property.title}</CardTitle>
                   <Price>{property.priceUsd}</Price>
-                  <Button
+                  <MoreButton
                     style={{
-                      transform: "scale(0.8) translate(0px, -10px)",
-                      fontWeight: "800",
+                      transform: "scale(0.8) ",
                       padding: "8px 10px",
                     }}
                     onClick={handleClick}
                   >
                     VER MÁS
-                  </Button>
+                  </MoreButton>
                 </TextContainer>
               </Card>
             </SwiperSlidePro>
