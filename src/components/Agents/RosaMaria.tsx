@@ -10,14 +10,11 @@ import {
 import { people } from "../../people";
 import { MainWrapper } from "./Agent.styles";
 import FullImage from "../../assets/ExampleBody.png";
-
-const handleRedirect = (url: string) => {
-  window.open(url, "_blank");
-};
+import { VideoCard } from "../Video";
+import RMAVideo from "../../assets/rma/video_vertical.mp4";
 
 export function RosaMaria() {
   const { rosaMaria } = people[0];
-  const { properties: rmaProperties } = rosaMaria;
   return (
     <MainWrapper>
       <Header
@@ -41,14 +38,17 @@ export function RosaMaria() {
         ctaText={rosaMaria.cta.textCTA}
       />
       <Divider />
-      <Properties properties={rmaProperties} />
+      <VideoCard video={RMAVideo} />
+      <Divider />
+
+      <Properties properties={rosaMaria.properties} />
       <Divider />
       <ActionCard />
       <Divider />
       <ImageCard
         src={FullImage}
         onClick={() => {
-          handleRedirect("https://www.instagram.com/rosa_alvarezs/");
+          window.open(rosaMaria.links.instagram, "_blank");
         }}
       />
     </MainWrapper>
