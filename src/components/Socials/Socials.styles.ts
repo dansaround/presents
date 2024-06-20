@@ -7,5 +7,5 @@ export const Wrapper = styled.section`
   gap: 15px;
   align-items: center;
   border-radius: 15px;
-  padding: 0 20px;
+  margin: 10px 0px;
 `;
