@@ -6,3 +6,4 @@ export * from "./Socials";
 export * from "./ImageCard";
 export * from "./Properties";
 export * from "./ActionCard";
+export * from "./Footer";

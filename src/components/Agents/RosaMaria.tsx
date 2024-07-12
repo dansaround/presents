@@ -6,6 +6,7 @@ import {
   ImageCard,
   Properties,
   ActionCard,
+  Footer,
 } from "../";
 import { people } from "../../people";
 import { MainWrapper } from "./Agent.styles";
@@ -56,6 +57,7 @@ export function RosaMaria() {
           window.open(rosaMaria.links.instagram, "_blank");
         }}
       />
+      <Footer />
     </MainWrapper>
   );
 }
