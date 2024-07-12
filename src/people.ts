@@ -35,10 +35,14 @@ export const people = [
         facebook: "https://www.facebook.com/rosamariarealtor",
         linkedin: "https://www.linkedin.com/in/rosa-maria-alvarez-salas-/",
         youtube: "https://www.youtube.com/@rosamariaalvarezsalas",
+        properties:
+          "https://www.remax.pe/web/agents/alvarezr@remax-centralrealty.com/remax-central/",
       },
       images: {
         profile: rosaProfilePic,
         cover: rosaCover,
+        cardImage:
+          "https://media.licdn.com/dms/image/C4E0BAQF33O9w7fQY5g/company-logo_200_200/0/1680119061517?e=1726099200&v=beta&t=tm5mC-0GumFFEGrrrdpY1TTbEm11gg3WLwe0FLlUMoo",
       },
       cta: {
         vcf: "src/assets/rosamaria.vcf",
