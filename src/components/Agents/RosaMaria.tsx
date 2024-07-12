@@ -43,7 +43,12 @@ export function RosaMaria() {
 
       <Properties properties={rosaMaria.properties} />
       <Divider />
-      <ActionCard />
+      <ActionCard
+        url={rosaMaria.links.properties}
+        imgUrl={rosaMaria.images.cardImage}
+        textTitle="Remax Central Realty"
+        textSubtitle="Cónoce Más"
+      />
       <Divider />
       <ImageCard
         src={FullImage}
