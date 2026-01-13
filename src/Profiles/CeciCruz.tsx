@@ -12,9 +12,14 @@ import { MainWrapper } from "./Agent.styles";
 import FullImage from "../assets/ceci/COVER CECI.jpg";
 import { VideoCard } from "../components/Video";
 import RMAVideo from "../assets/rma/video_vertical.mp4";
+import { useEffect } from "react";
 
 export function CeciCruz() {
   const { profile: ceciCruz } = people[1];
+
+  useEffect(() => {
+    document.title = `${ceciCruz.name} | Productora - Dramaturga`;
+  }, [ceciCruz.name]);
 
   return (
     <MainWrapper>
