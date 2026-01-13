@@ -3,12 +3,13 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import { RosaMaria } from "../components/Agents/RosaMaria";
-import App from "../App";
+import { RosaMaria } from "../Profiles/RosaMaria";
+import { CeciCruz } from "../Profiles/CeciCruz";
 
 export const router = createBrowserRouter(
   createRoutesFromElements([
-    <Route path="/" element={<App />} />,
+    <Route path="/" element={<RosaMaria />} />,
     <Route path="/rosamaria" element={<RosaMaria />} />,
+    <Route path="/ceciliacruzrodriguez" element={<CeciCruz />} />,
   ])
 );

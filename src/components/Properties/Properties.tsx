@@ -1,4 +1,3 @@
-import "swiper/css";
 import {
   Card,
   Image,
@@ -12,19 +11,9 @@ import {
   Tag,
   MoreButton,
 } from "./Properties.style";
-import "swiper/css/pagination";
 import { FreeMode, Pagination } from "swiper/modules";
 import { Swiper } from "swiper/react";
-
-type Property = {
-  url: string;
-  image: string;
-  title: string;
-  priceSol: string;
-  priceUsd: string;
-  location: string;
-  type: string;
-};
+import { Property } from "../../types";
 
 type PropertiesProps = {
   properties: Property[];

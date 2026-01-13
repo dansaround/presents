@@ -1,5 +1,7 @@
 import rosaProfilePic from "./assets/profile_pic.png";
+import ceciProfilePic from "./assets/ceci/ceci profile.png";
 import rosaCover from "./assets/Cover.png";
+import ceciCover from "./assets/ceci/COVER CECI.jpg";
 import LaMolinaImg from "./assets/rma/casa_la_molina.jpg";
 import terrenoEnAlquilerImg from "./assets/rma/terreno_en_alquiler.jpg";
 import depaDuplexVentaImg from "./assets/rma/depa_duplex_venta.jpg";
@@ -20,10 +22,12 @@ import casaUrbanaVentaSurcoImg from "./assets/rma/casa_urbana_venta_surco.jpg";
 import terrenoComercialVentaSantaRosaImg from "./assets/rma/terreno_comercial_venta_santa_rosa.jpg";
 import depaFlatVentaSurco4Img from "./assets/rma/depa_flat_venta_surco4.jpg";
 import depaFlatVentaMiraflores2Img from "./assets/rma/depa_flat_venta_miraflores_2.jpg";
+import { Person } from "./types";
 
-export const people = [
+export const people: Person[] = [
   {
-    rosaMaria: {
+    id: "rosita",
+    profile: {
       name: "Rosa María Álvarez",
       role: "Asesora Inmobiliaria 🥇",
       description:
@@ -231,6 +235,33 @@ export const people = [
           type: "Venta",
         },
       ],
+    },
+  },
+  {
+    id: "Ceci",
+    profile: {
+      name: "Cecilia Cruz Rodriguez",
+      role: "Productora | Actriz | Dramaturga",
+      description:
+        "Me dedico a ofrecer una experiencia personalizada de excelencia, ajustado a tus necesidades.",
+      links: {
+        whatsapp: "https://wa.me/message/63G3GQCG742WM1",
+        tiktok: "https://www.tiktok.com/@rosamariaalvarezsalas",
+        instagram: "https://www.instagram.com/rosa_alvarezs",
+        facebook: "https://www.facebook.com/rosamariarealtor",
+        linkedin: "https://www.linkedin.com/in/rosa-maria-alvarez-salas-/",
+      },
+      images: {
+        profile: ceciProfilePic,
+        cover: ceciCover,
+        cardImage:
+          "https://media.licdn.com/dms/image/C4E0BAQF33O9w7fQY5g/company-logo_200_200/0/1680119061517?e=1726099200&v=beta&t=tm5mC-0GumFFEGrrrdpY1TTbEm11gg3WLwe0FLlUMoo",
+      },
+      cta: {
+        vcf: "src/assets/rosamaria.vcf",
+        linkTo: "https://wa.link/2q2tzs",
+        textCTA: "Chatea conmigo",
+      },
     },
   },
 ];
