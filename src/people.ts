@@ -241,15 +241,13 @@ export const people: Person[] = [
     id: "Ceci",
     profile: {
       name: "Cecilia Cruz Rodriguez",
-      role: "Productora | Actriz | Dramaturga",
+      role: "Lima, Perú 🇵🇪",
       description:
-        "Me dedico a ofrecer una experiencia personalizada de excelencia, ajustado a tus necesidades.",
+        "Gestora cultural | Directora | Productora | Artista y creadora escénica",
       links: {
-        whatsapp: "https://wa.me/message/63G3GQCG742WM1",
-        tiktok: "https://www.tiktok.com/@rosamariaalvarezsalas",
-        instagram: "https://www.instagram.com/rosa_alvarezs",
-        facebook: "https://www.facebook.com/rosamariarealtor",
-        linkedin: "https://www.linkedin.com/in/rosa-maria-alvarez-salas-/",
+        whatsapp: "https://wa.link/k9j7xb",
+        instagram: "https://www.instagram.com/cecilia.cruzr/",
+        linkedin: "https://www.linkedin.com/in/ceciliacruzr/?locale=en",
       },
       images: {
         profile: ceciProfilePic,

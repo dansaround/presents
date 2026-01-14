@@ -10,6 +10,6 @@ export const router = createBrowserRouter(
   createRoutesFromElements([
     <Route path="/" element={<RosaMaria />} />,
     <Route path="/rosamaria" element={<RosaMaria />} />,
-    <Route path="/ceciliacruzrodriguez" element={<CeciCruz />} />,
+    <Route path="/ceciliacruzr" element={<CeciCruz />} />,
   ])
 );
