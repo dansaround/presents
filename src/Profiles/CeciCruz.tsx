@@ -38,7 +38,7 @@ export function CeciCruz() {
             ? "Bachiller en Ciencias y Artes de la Comunicación..."
             : "Bachelor in Communication Sciences..."
         }
-        image={ceciCruz.images?.profile} // Usará la foto de perfil para la miniatura de WhatsApp/FB
+        image={"https://hackmd.io/_uploads/SkXWxkUBWx.jpg"}
       />
       <div
         style={{
