@@ -14,6 +14,7 @@ import { Button } from "../components/Button";
 import { MainWrapper } from "./Agent.styles";
 import { MdOutlineTranslate } from "react-icons/md";
 import { YouTube } from "../components/YoutubeVideo/YoutubeVideo";
+import { Seo } from "../utils/Seo";
 // import { VideoCard } from "../components/Video";
 
 export function CeciCruz() {
@@ -30,6 +31,15 @@ export function CeciCruz() {
 
   return (
     <MainWrapper>
+      <Seo
+        name={ceciCruz.name}
+        description={
+          toggleLanguage
+            ? "Bachiller en Ciencias y Artes de la Comunicación..."
+            : "Bachelor in Communication Sciences..."
+        }
+        image={ceciCruz.images?.profile} // Usará la foto de perfil para la miniatura de WhatsApp/FB
+      />
       <div
         style={{
           display: "flex",
