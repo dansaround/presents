@@ -1,19 +1,19 @@
 import {
+  Tag,
   Card,
-  Image,
+  Price,
   Title,
+  Image,
   Wrapper,
   Location,
   CardTitle,
-  SwiperSlidePro,
-  Price,
-  TextContainer,
-  Tag,
   MoreButton,
+  TextContainer,
+  SwiperSlidePro,
 } from "./Properties.style";
-import { FreeMode, Pagination } from "swiper/modules";
 import { Swiper } from "swiper/react";
 import { Property } from "../../types";
+import { FreeMode, Pagination } from "swiper/modules";
 
 type PropertiesProps = {
   properties: Property[];

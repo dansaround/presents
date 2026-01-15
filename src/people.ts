@@ -253,12 +253,12 @@ export const people: Person[] = [
         profile: ceciProfilePic,
         cover: ceciCover,
         cardImage:
-          "https://media.licdn.com/dms/image/C4E0BAQF33O9w7fQY5g/company-logo_200_200/0/1680119061517?e=1726099200&v=beta&t=tm5mC-0GumFFEGrrrdpY1TTbEm11gg3WLwe0FLlUMoo",
+          "https://cdn.pixabay.com/photo/2016/12/18/13/45/download-1915753_960_720.png",
       },
       cta: {
-        vcf: "src/assets/rosamaria.vcf",
-        linkTo: "https://wa.link/2q2tzs",
-        textCTA: "Chatea conmigo",
+        vcf: "src/assets/ceci/ceci.vcf",
+        linkTo: "eciliagabrielacruz@gmail.com",
+        textCTA: "Envíar e-mail",
       },
     },
   },

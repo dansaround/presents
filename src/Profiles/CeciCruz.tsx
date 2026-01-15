@@ -8,10 +8,13 @@ import {
   Footer,
 } from "../components";
 import { people } from "../people";
-import { MainWrapper } from "./Agent.styles";
-import FullImage from "../assets/ceci/COVER CECI.jpg";
-import { VideoCard } from "../components/Video";
 import { useEffect, useState } from "react";
+import FullImage from "../assets/ceci/COVER CECI.jpg";
+import { Button } from "../components/Button";
+import { MainWrapper } from "./Agent.styles";
+import { MdOutlineTranslate } from "react-icons/md";
+import { YouTube } from "../components/YoutubeVideo/YoutubeVideo";
+// import { VideoCard } from "../components/Video";
 
 export function CeciCruz() {
   const { profile: ceciCruz } = people[1];
@@ -27,10 +30,25 @@ export function CeciCruz() {
 
   return (
     <MainWrapper>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <Button onClick={handleToggleLanguage} $color="#8a0081">
+          <MdOutlineTranslate size={30} />
+          {toggleLanguage ? "TRADUCIR AL ESPAÑOL" : "TRANSLATE TO ENGLISH"}
+        </Button>
+      </div>
       <Header
         name={ceciCruz.name}
         role={ceciCruz.role!}
-        description={ceciCruz.description}
+        description={
+          toggleLanguage
+            ? ceciCruz.description
+            : "Cultural manager | Director | Producer | Artist and scenic creator"
+        }
         profilePic={ceciCruz.images!.profile}
         coverImg={ceciCruz.images!.cover!}
       />
@@ -40,20 +58,50 @@ export function CeciCruz() {
         urlLinkedIn={ceciCruz.links!.linkedin!}
       />
       <CTA
-        filePath={ceciCruz.cta!.vcf!}
+        filePath={ceciCruz.cta?.vcf!}
         redirectTo={ceciCruz.cta!.linkTo}
         ctaText={ceciCruz.cta!.textCTA}
       />
       <Divider />
-      Seccion 1
+      <p
+        style={{
+          fontSize: "16px",
+          lineHeight: "1.7", // Clave para que no se vea apretado
+          color: "#e0e0e0 ", // Cambia a si tu fondo es oscuro
+          textAlign: "justify", // Alineación limpia
+          maxWidth: "750px", // Evita que las líneas sean infinitas
+          margin: "20px auto", // Centra el bloque y da espacio arriba/abajo
+          fontFamily: "system-ui, -apple-system, sans-serif",
+          letterSpacing: "0.01em",
+          opacity: 0.9, // Suaviza un poco el color
+        }}
+      >
+        {toggleLanguage
+          ? `Bachiller en Ciencias y Artes de la Comunicación con mención en Artes
+        Escénicas por la PUCP, egresada de la V Promoción del programa de
+        Formación Actoral de Ciclorama (2024), invitada al Encuentro de Mujeres
+        Creadoras y Performáticas 2024 “Alquimias y Poéticas del Cuerpo” del
+        Grupo...... `
+          : "Bachelor in Communication Sciences and Arts with a mention in Performing Arts from the PUCP, graduated from the V Promotion of the Ciclorama Actor Training program (2024), invited to the Meeting of Creative and Performing Women 2024 “Alchemies and Poetics of the Body” of the Group......"}
+      </p>
       <Divider />
-      Seccion 2
+      <div
+        style={{
+          display: "flex",
+          width: "100%",
+          justifyContent: "center",
+        }}
+      >
+        <YouTube videoId="nkWjNT33SvI" />
+      </div>
       <Divider />
       <ActionCard
         url={ceciCruz.links!.properties!}
         imgUrl={ceciCruz.images!.cardImage!}
-        textTitle="Contáctame por email"
-        textSubtitle="Enviar mensaje"
+        textTitle={
+          toggleLanguage ? "Cecilia Cruz Dossier ES" : "Cecilia Cruz Dossier EN"
+        }
+        textSubtitle={toggleLanguage ? "Descargar" : "Download"}
       />
       <Divider />
       <ImageCard

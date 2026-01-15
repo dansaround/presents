@@ -14,11 +14,11 @@ export const Title = styled.h2`
 `;
 
 export const SwiperSlidePro = styled(SwiperSlide)`
-  width: auto;
+  width: 180px;
 `;
 export const Card = styled.div`
   position: relative;
-  width: 180px;
+  width: 190px;
   height: 340px;
   flex: 0 0 auto;
   border-radius: 15px;
