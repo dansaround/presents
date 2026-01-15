@@ -1,7 +1,7 @@
 import rosaProfilePic from "./assets/profile_pic.png";
-import ceciProfilePic from "./assets/ceci/ceci profile.png";
+import ceciProfilePic from "./assets/ceci/cecipp.webp";
 import rosaCover from "./assets/Cover.png";
-import ceciCover from "./assets/ceci/COVER CECI.jpg";
+import ceciCover from "./assets/ceci/COVER FINAL.jpg";
 import LaMolinaImg from "./assets/rma/casa_la_molina.jpg";
 import terrenoEnAlquilerImg from "./assets/rma/terreno_en_alquiler.jpg";
 import depaDuplexVentaImg from "./assets/rma/depa_duplex_venta.jpg";

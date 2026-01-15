@@ -9,7 +9,7 @@ import {
 } from "../components";
 import { people } from "../people";
 import { useEffect, useState } from "react";
-import FullImage from "../assets/ceci/COVER CECI.jpg";
+import FullImage from "../assets/ceci/COVER FINAL.jpg";
 import { Button } from "../components/Button";
 import { MainWrapper } from "./Agent.styles";
 import { MdOutlineTranslate } from "react-icons/md";
