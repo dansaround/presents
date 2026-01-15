@@ -14,12 +14,19 @@ import FullImage from "../assets/ExampleBody.png";
 import { VideoCard } from "../components/Video";
 import RMAVideo from "../assets/rma/video_vertical.mp4";
 import { hasProperties } from "../types";
+import { useEffect } from "react";
 
 export function RosaMaria() {
   const { profile: rosaMaria } = people[0];
+
+  useEffect(() => {
+    document.title = `${rosaMaria.name} | Productora - Dramaturga`;
+  }, [rosaMaria.name]);
+
   if (!hasProperties(rosaMaria)) {
     return null; // o un fallback
   }
+
   return (
     <MainWrapper>
       <Header
