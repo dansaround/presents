@@ -13,7 +13,7 @@ export function CTA({ filePath, redirectTo, ctaText, vcfText }: CTAProps) {
     const fileURL = filePath;
     const link = document.createElement("a");
     link.href = fileURL;
-    link.download = "rosamaria.vcf";
+    link.download = "contact.vcf";
     link.click();
   };
 

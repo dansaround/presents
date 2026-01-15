@@ -18,7 +18,7 @@ import { YouTube } from "../components/YoutubeVideo/YoutubeVideo";
 
 export function CeciCruz() {
   const { profile: ceciCruz } = people[1];
-  const [toggleLanguage, setToggleLanguage] = useState(false);
+  const [toggleLanguage, setToggleLanguage] = useState(true);
 
   const handleToggleLanguage = () => {
     setToggleLanguage(!toggleLanguage);
@@ -38,7 +38,7 @@ export function CeciCruz() {
       >
         <Button onClick={handleToggleLanguage} $color="#8a0081">
           <MdOutlineTranslate size={30} />
-          {toggleLanguage ? "TRADUCIR AL ESPAÑOL" : "TRANSLATE TO ENGLISH"}
+          {toggleLanguage ? "TRANSLATE TO ENGLISH" : "TRADUCIR AL ESPAÑOL"}
         </Button>
       </div>
       <Header
@@ -59,8 +59,9 @@ export function CeciCruz() {
       />
       <CTA
         filePath={ceciCruz.cta?.vcf!}
+        vcfText={toggleLanguage ? "Descargar Contacto" : "Download VCard"}
         redirectTo={ceciCruz.cta!.linkTo}
-        ctaText={ceciCruz.cta!.textCTA}
+        ctaText={toggleLanguage ? "Escribir mail" : "Send mail"}
       />
       <Divider />
       <p
