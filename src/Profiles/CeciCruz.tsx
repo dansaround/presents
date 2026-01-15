@@ -8,7 +8,7 @@ import {
   Footer,
 } from "../components";
 import { people } from "../people";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import FullImage from "../assets/ceci/COVER FINAL.jpg";
 import { Button } from "../components/Button";
 import { MainWrapper } from "./Agent.styles";
