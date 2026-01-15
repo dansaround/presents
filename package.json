@@ -14,6 +14,7 @@
     "@swc/plugin-styled-components": "^2.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
     "react-router-dom": "^6.23.1",
     "react-social-icons": "^6.16.0",
     "styled-components": "^6.1.11",
