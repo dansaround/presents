@@ -17,13 +17,13 @@ export function CTA({ filePath, redirectTo, ctaText, vcfText }: CTAProps) {
     link.click();
   };
 
-  const redirectWhatsapp = () => {
-    const newURL = redirectTo;
-    const link = document.createElement("a");
-    link.href = newURL;
-    link.target = "_blank";
-    link.click();
-  };
+  // const redirectWhatsapp = () => {
+  //   const newURL = redirectTo;
+  //   const link = document.createElement("a");
+  //   link.href = newURL;
+  //   link.target = "_blank";
+  //   link.click();
+  // };
 
   const handleAction = () => {
     // Expresión regular básica para validar email
@@ -46,7 +46,7 @@ export function CTA({ filePath, redirectTo, ctaText, vcfText }: CTAProps) {
       <Button onClick={handleDownload} $color="">
         {vcfText || "Descargar Contacto"}
       </Button>
-      <Button onClick={redirectWhatsapp} $primary>
+      <Button onClick={handleAction} $primary>
         {ctaText}
       </Button>
     </Wrapper>
