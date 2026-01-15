@@ -25,10 +25,6 @@ export function CeciCruz() {
     setToggleLanguage(!toggleLanguage);
   };
 
-  useEffect(() => {
-    document.title = `${ceciCruz.name} | Productora - Dramaturga`;
-  }, [ceciCruz.name]);
-
   return (
     <MainWrapper>
       <Seo
