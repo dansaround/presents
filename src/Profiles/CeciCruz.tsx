@@ -34,7 +34,7 @@ export function CeciCruz() {
             ? "Gestora cultural | Directora | Productora | Artista y creadora escénica"
             : "Cultural manager | Director | Producer | Artist and scenic creator"
         }
-        image={"https://hackmd.io/_uploads/SkXWxkUBWx.jpg"}
+        image={"https://hackmd.io/_uploads/SJoHz1IBWl.png"}
       />
       <div
         style={{
