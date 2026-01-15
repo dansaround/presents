@@ -31,8 +31,8 @@ export function CeciCruz() {
         name={ceciCruz.name}
         description={
           toggleLanguage
-            ? "Bachiller en Ciencias y Artes de la Comunicación..."
-            : "Bachelor in Communication Sciences..."
+            ? "Gestora cultural | Directora | Productora | Artista y creadora escénica"
+            : "Cultural manager | Director | Producer | Artist and scenic creator"
         }
         image={"https://hackmd.io/_uploads/SkXWxkUBWx.jpg"}
       />
