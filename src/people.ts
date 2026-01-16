@@ -257,7 +257,7 @@ export const people: Person[] = [
       },
       cta: {
         vcf: "src/assets/ceci/ceci.vcf",
-        linkTo: "eciliagabrielacruz@gmail.com",
+        linkTo: "ceciliagabrielacruz@gmail.com",
         textCTA: "Envíar e-mail",
       },
     },
