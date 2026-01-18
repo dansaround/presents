@@ -96,7 +96,7 @@ export function CeciCruz() {
         <h3 className="text-center px-4 text-xl md:text-2xl lg:text-3xl font-semibold mb-4">
           {toggleLanguage ? "Sobre mí" : "About me"}
         </h3>
-        <p className="text-center px-4 text-md md:text-lg lg:text-xl font-light py-1 max-w-[750px] mx-auto opacity-90 leading-relaxed">
+        <p className="text-center px-4 text-md md:text-lg lg:text-xl font-light py-1  mx-auto opacity-90 leading-relaxed">
           {toggleLanguage
             ? `Artista y creadora escénica afroperuana, directora, productora y gestora cultural. Mi trabajo entrelaza lo artístico con temas de relevancia social como la igualdad de género, la educación sexual integral, la búsqueda y construcción de identidad y el antirracismo.`
             : "Afro-Peruvian performing artist-creator, director, producer, and cultural manager. My work intertwines art with socially relevant themes such as gender equality, sexual education, the construction of identity, and anti-racism."}
@@ -124,8 +124,12 @@ export function CeciCruz() {
         </h3>
         <p className="text-center px-4 text-md md:text-lg lg:text-xl font-light py-1 max-w-[750px] mx-auto opacity-90 leading-relaxed">
           {toggleLanguage
-            ? `Proyecto ganador de Estímulos Económicos para la Cultura 2024 del Ministerio de Cultura del Perú...`
-            : `Winning project of the 2024 Economic Stimuli for Culture...`}
+            ? `Proyecto ganador de Estímulos Económicos para la Cultura 2024 del Ministerio de Cultura del Perú.
+Obra unipersonal multidisciplinaria que explora la construcción de identidad como mujer afroperuana de la intérprete a partir de la imagen de tres mujeres, abuela, madre e hija, unidas por un mismo nombre, Cecilia.
+`
+            : `Winning project of the 2024 Economic Stimuli for Culture program of the Ministry of Culture of Peru.
+A multidisciplinary solo performance that explores the construction of identity as an Afro-Peruvian woman through the performer’s perspective, based on the image of three women: grandmother, mother, and daughter, linked by the same name, Cecilia.
+`}
         </p>
       </div>
 
