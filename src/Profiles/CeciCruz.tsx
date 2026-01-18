@@ -103,7 +103,11 @@ export function CeciCruz() {
       </div>
       <Divider />
       <ActionCard
-        url={ceciCruz.links!.properties!}
+        url={
+          toggleLanguage
+            ? "https://shorturl.at/NPbNB"
+            : "https://shorturl.at/829hp"
+        }
         imgUrl={ceciCruz.images!.cardImage!}
         textTitle={
           toggleLanguage ? "Cecilia Cruz Dossier ES" : "Cecilia Cruz Dossier EN"
