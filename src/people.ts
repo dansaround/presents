@@ -248,9 +248,6 @@ export const people: Person[] = [
         whatsapp: "https://wa.link/k9j7xb",
         instagram: "https://www.instagram.com/cecilia.cruzr/",
         linkedin: "https://www.linkedin.com/in/ceciliacruzr/?locale=en",
-        dossierEn:
-          "https://drive.google.com/file/d/1LTq8RDaLJwK5cHneWjgGK7uTiN_yJ1Wo/view?usp=sharing",
-        dossierEs: `https://drive.google.com/file/d/1wfiWNODftj0Dx3ZV_yWHftVM4UdmeA7g/view?usp=sharing`,
       },
       images: {
         profile: ceciProfilePic,
