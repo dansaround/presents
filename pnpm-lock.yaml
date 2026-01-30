@@ -22,6 +22,18 @@ importers:
       better-sqlite3:
         specifier: 9.4.3
         version: 9.4.3
+      react:
+        specifier: ^18.0.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.0.0
+        version: 18.3.1(react@18.3.1)
+      react-router-dom:
+        specifier: ^5.2.0
+        version: 5.3.4(react@18.3.1)
+      styled-components:
+        specifier: ^5.2.1
+        version: 5.3.3(@babel/core@7.28.6)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)
     devDependencies:
       '@types/node':
         specifier: ^20
@@ -12389,7 +12401,7 @@ snapshots:
       cli-width: 3.0.0
       external-editor: 3.1.0
       figures: 3.2.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       mute-stream: 0.0.8
       run-async: 2.4.1
       rxjs: 6.6.7
@@ -13906,7 +13918,7 @@ snapshots:
 
   pretty-error@4.0.0:
     dependencies:
-      lodash: 4.17.21
+      lodash: 4.17.23
       renderkid: 3.0.0
 
   process-nextick-args@2.0.1: {}
@@ -14279,7 +14291,7 @@ snapshots:
       css-select: 4.3.0
       dom-converter: 0.2.0
       htmlparser2: 6.1.0
-      lodash: 4.17.21
+      lodash: 4.17.23
       strip-ansi: 6.0.1
 
   repeat-element@1.1.4: {}
