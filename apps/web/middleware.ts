@@ -35,6 +35,14 @@ export default clerkMiddleware(async (auth, req: NextRequest) => {
     return NextResponse.rewrite(url);
   }
 
+  // Handle /@username routes - rewrite to /username
+  if (pathname.startsWith('/@')) {
+    const slug = pathname.slice(2); // Remove /@
+    const url = req.nextUrl.clone();
+    url.pathname = `/${slug}`;
+    return NextResponse.rewrite(url);
+  }
+
   // Protect dashboard and editor routes
   if (isProtectedRoute(req)) {
     const { userId } = await auth();
