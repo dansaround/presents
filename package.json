@@ -1,42 +1,22 @@
 {
   "name": "presents",
+  "version": "2.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "description": "Enhanced linkhub/linktree alternative with Next.js and Strapi CMS",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "dev": "pnpm run --parallel dev",
+    "dev:web": "pnpm --filter @presents/web dev",
+    "dev:cms": "pnpm --filter @presents/cms develop",
+    "build": "pnpm run --parallel build",
+    "build:web": "pnpm --filter @presents/web build",
+    "build:cms": "pnpm --filter @presents/cms build",
+    "lint": "pnpm run --parallel lint",
+    "lint:web": "pnpm --filter @presents/web lint",
+    "clean": "pnpm run --parallel clean"
   },
-  "dependencies": {
-    "@swc/core": "^1.5.25",
-    "@swc/plugin-styled-components": "^2.0.6",
-    "@tailwindcss/vite": "^4.1.18",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-helmet-async": "^2.0.5",
-    "react-icons": "^5.5.0",
-    "react-router-dom": "^6.23.1",
-    "react-social-icons": "^6.16.0",
-    "styled-components": "^6.1.11",
-    "swiper": "^11.1.4",
-    "tailwindcss": "^4.1.18"
+  "engines": {
+    "node": ">=18.17.0",
+    "pnpm": ">=8.0.0"
   },
-  "devDependencies": {
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
-    "@types/styled-components": "^5.1.36",
-    "@typescript-eslint/eslint-plugin": "^7.2.0",
-    "@typescript-eslint/parser": "^7.2.0",
-    "@vitejs/plugin-react-swc": "^3.5.0",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.0"
-  },
-  "resolutions": {
-    "styled-components": "^5"
-  }
+  "packageManager": "pnpm@8.15.0"
 }
