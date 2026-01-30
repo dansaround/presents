@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_profile_themes",
+  "info": {
+    "displayName": "ProfileTheme",
+    "description": "Theme configuration for a profile"
+  },
+  "options": {},
+  "attributes": {
+    "mode": {
+      "type": "enumeration",
+      "enum": ["light", "dark"],
+      "default": "dark",
+      "required": true
+    },
+    "primaryColor": {
+      "type": "string",
+      "default": "#3b82f6",
+      "maxLength": 7,
+      "regex": "^#[0-9A-Fa-f]{6}$"
+    },
+    "accentColor": {
+      "type": "string",
+      "default": "#8b5cf6",
+      "maxLength": 7,
+      "regex": "^#[0-9A-Fa-f]{6}$"
+    },
+    "preset": {
+      "type": "enumeration",
+      "enum": ["default", "warm", "cool", "vibrant", "minimal"],
+      "default": "default"
+    }
+  }
+}

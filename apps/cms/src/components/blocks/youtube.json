@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_youtubes",
+  "info": {
+    "displayName": "YouTube",
+    "description": "YouTube video embed block"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true,
+      "maxLength": 500
+    },
+    "caption": {
+      "type": "string",
+      "maxLength": 200
+    }
+  }
+}

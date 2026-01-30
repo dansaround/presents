@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "view_logs",
+  "info": {
+    "singularName": "view-log",
+    "pluralName": "view-logs",
+    "displayName": "ViewLog",
+    "description": "Analytics view logs for profile visits"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "profile": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::profile.profile"
+    },
+    "fingerprint": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "referrer": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "country": {
+      "type": "string",
+      "maxLength": 2
+    },
+    "device": {
+      "type": "enumeration",
+      "enum": ["mobile", "tablet", "desktop"],
+      "default": "desktop"
+    },
+    "timestamp": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}

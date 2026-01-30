@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "singularName": "profile",
+    "pluralName": "profiles",
+    "displayName": "Profile",
+    "description": "User profile for the Presents platform"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "clerkUserId": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "maxLength": 255
+    },
+    "role": {
+      "type": "string",
+      "maxLength": 150
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 1000
+    },
+    "profileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "customDomain": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "theme": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.profile-theme"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.header",
+        "blocks.socials",
+        "blocks.cta",
+        "blocks.text",
+        "blocks.image",
+        "blocks.video",
+        "blocks.youtube",
+        "blocks.properties",
+        "blocks.action-card",
+        "blocks.divider"
+      ]
+    }
+  }
+}

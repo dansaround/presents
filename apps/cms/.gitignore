@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build
+build/
+dist/
+.cache/
+
+# Strapi
+.tmp/
+.strapi/
+.strapi-updater.json
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Uploads (consider if you want to commit uploads)
+public/uploads/*
+!public/uploads/.gitkeep

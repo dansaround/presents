@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_blocks_headers",
+  "info": {
+    "displayName": "Header",
+    "description": "Profile header block with visibility toggles"
+  },
+  "options": {},
+  "attributes": {
+    "showName": {
+      "type": "boolean",
+      "default": true
+    },
+    "showRole": {
+      "type": "boolean",
+      "default": true
+    },
+    "showDescription": {
+      "type": "boolean",
+      "default": true
+    },
+    "showCoverImage": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

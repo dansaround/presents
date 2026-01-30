@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_blocks_action_cards",
+  "info": {
+    "displayName": "ActionCard",
+    "description": "Generic card with image and CTA"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "subtitle": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "ctaText": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "ctaUrl": {
+      "type": "string",
+      "required": true,
+      "maxLength": 500
+    }
+  }
+}

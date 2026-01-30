@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_properties",
+  "info": {
+    "displayName": "Properties",
+    "description": "Property listings carousel for realtors"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.property-item"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@presents/cms",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Strapi CMS for Presents",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "clean": "rm -rf .cache build dist"
+  },
+  "dependencies": {
+    "@strapi/strapi": "4.25.0",
+    "@strapi/plugin-users-permissions": "4.25.0",
+    "@strapi/plugin-i18n": "4.25.0",
+    "better-sqlite3": "9.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "presents-cms-local"
+  }
+}

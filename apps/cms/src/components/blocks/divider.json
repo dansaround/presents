@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_blocks_dividers",
+  "info": {
+    "displayName": "Divider",
+    "description": "Visual separator block"
+  },
+  "options": {},
+  "attributes": {
+    "height": {
+      "type": "enumeration",
+      "enum": ["small", "medium", "large"],
+      "default": "medium"
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": ["line", "dots", "none"],
+      "default": "none"
+    }
+  }
+}

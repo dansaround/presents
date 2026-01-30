@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_shared_property_items",
+  "info": {
+    "displayName": "PropertyItem",
+    "description": "A single property listing"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true,
+      "maxLength": 500
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "priceSol": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "priceUsd": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "location": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["Venta", "Alquiler"],
+      "default": "Venta",
+      "required": true
+    }
+  }
+}

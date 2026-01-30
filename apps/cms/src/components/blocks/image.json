@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_blocks_images",
+  "info": {
+    "displayName": "Image",
+    "description": "Image block with optional link"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "alt": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "link": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "aspectRatio": {
+      "type": "enumeration",
+      "enum": ["1:1", "4:3", "16:9", "auto"],
+      "default": "auto"
+    }
+  }
+}
